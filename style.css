@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=VT323&subset=latin-ext');
+
+:root{
+  --grid-size: 10;
+  --grid-gap: 1px;
+
+}
+body{
+  text-align: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background-color: #44e5c8;
+}
+h1{
+  text-align: center;
+  font-family: 'VT323', monospace;
+  margin-bottom: 0;
+
+}
+.mainContainer{
+  background: #f4f4f4;
+  width:500px;
+  height: 500px;
+  margin: 25px auto 50px;
+  padding: 0;
+  border: solid black 3px;
+  border-radius: 5px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(var(--grid-size), 0.5fr);
+  grid-template-rows: repeat(var(--grid-size), 0.5fr);
+
+}
+.innerBoxes{
+  background-color: #f4f4f4;
+  border: solid black 1px;
+  transition: 0.2s;
+}
+
+.controls{
+  margin: 25px auto;
+  width: 500px;
+}
+a:link{
+  color: #0000E;
+}
+a:visited{
+  color: #551A8B;
+}
